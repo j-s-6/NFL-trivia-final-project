@@ -1,5 +1,6 @@
 # packages used in app
 requests
+python-dotenv
 
 # packages used for testing:
 pytest
