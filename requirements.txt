@@ -1,0 +1,5 @@
+# packages used in app
+requests
+
+# packages used for testing:
+pytest
