@@ -30,20 +30,3 @@ def get_teams():
                     "venue_name": team["venue"]["name"]
                 })
     return teams
-
-# TESTING API
-if __name__ == "__main__":
-    teams = get_teams()
-    print(f"Total teams: {len(teams)}")
-    print("First team example:")
-    print(teams[0:31])
-    print(f"Team Name: {teams[0]['market']} {teams[0]['name']}")
-    print(f"Founded: {teams[0]['founded']}")
-    print(f"Owner: {teams[0]['owner']}")
-    print(f"General Manager: {teams[0]['general_manager']}")
-    print(f"President: {teams[0]['president']}")
-    print(f"Mascot: {teams[0].get('mascot', 'N          /A')}")
-    print(f"Championships Won: {teams[0].get('championships_won', 'N/A')}")
-    print(f"Championship Seasons: {teams[0].get('championship_seasons', 'N/A')}")
-    print(f"Playoff Appearances: {teams[0]['playoff_appearances']}")
-    print(f"Venue Name: {teams[0]['venue_name']}")
