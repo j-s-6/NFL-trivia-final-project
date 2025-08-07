@@ -9,9 +9,9 @@ question_fields = {
     "founded": "In what year was the {team_name} founded?",
     "president": "Who is the president of the {team_name}?",
     "general_manager": "Who is the GM of the {team_name}?",
-    "championships_won": "How many championships has the {team_name} won?",
+    "championships_won": "How many championships have the {team_name} won?",
     "playoff_appearances": "How many playoff appearances have the {team_name} had?",
-    "venue_name": "Where do the {team_name} play their home games?"
+    "venue_name": "What stadium do the {team_name} play in?"
 }
 
 def get_random_question():
