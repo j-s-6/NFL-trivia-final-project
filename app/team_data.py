@@ -31,19 +31,42 @@ def get_teams():
                 })
     return teams
 
+#writing a seperate list for each team attribute 
+
+
+teams = get_teams()
+def extract_values(dict_list, key):
+    return [teams[key] for teams in dict_list if key in teams]
+
+#print(teams[0:31])
+list_alias = extract_values(teams, 'alias')
+list_market = extract_values(teams, 'market')
+list_name = extract_values(teams, 'name')
+list_founded = extract_values(teams, 'founded')
+list_owner = extract_values(teams, 'owner')
+list_general_manager = extract_values(teams, 'general_manager')
+list_president = extract_values(teams, 'president')
+list_mascot = extract_values(teams, 'mascot')
+list_championships_won = extract_values(teams, 'championships_won')
+list_playoff_appearances = extract_values(teams, 'playoff_appearances')
+list_venue_name = extract_values(teams, 'venue_name')
+
+variables = ['alias', 'market', 'owner', 'general_manager', 'president', 'mascot', "venue_name"]
+
 # TESTING API
-if __name__ == "__main__":
-    teams = get_teams()
-    print(f"Total teams: {len(teams)}")
-    print("First team example:")
-    print(teams[0:31])
-    print(f"Team Name: {teams[0]['market']} {teams[0]['name']}")
-    print(f"Founded: {teams[0]['founded']}")
-    print(f"Owner: {teams[0]['owner']}")
-    print(f"General Manager: {teams[0]['general_manager']}")
-    print(f"President: {teams[0]['president']}")
-    print(f"Mascot: {teams[0].get('mascot', 'N          /A')}")
-    print(f"Championships Won: {teams[0].get('championships_won', 'N/A')}")
-    print(f"Championship Seasons: {teams[0].get('championship_seasons', 'N/A')}")
-    print(f"Playoff Appearances: {teams[0]['playoff_appearances']}")
-    print(f"Venue Name: {teams[0]['venue_name']}")
+#if __name__ == "__main__":
+#    teams = get_teams()
+#    print(f"Total teams: {len(teams)}")
+#    print("First team example:")
+#    print(teams[0:31])
+#    print(f"Team Name: {teams[0]['market']} {teams[0]['name']}")
+#    print(f"Founded: {teams[0]['founded']}")
+#    print(f"Owner: {teams[0]['owner']}")
+#    print(f"General Manager: {teams[0]['general_manager']}")
+#    print(f"President: {teams[0]['president']}")
+#    print(f"Mascot: {teams[0].get('mascot', 'N          /A')}")
+#    print(f"Championships Won: {teams[0].get('championships_won', 'N/A')}")
+#    print(f"Championship Seasons: {teams[0].get('championship_seasons', 'N/A')}")
+#    print(f"Playoff Appearances: {teams[0]['playoff_appearances']}")
+#    print(f"Venue Name: {teams[0]['venue_name']}")
+#
