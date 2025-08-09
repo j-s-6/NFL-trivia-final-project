@@ -31,7 +31,7 @@ SPORTRADAR_API_KEY=your_api_key_here
 Play a game of NFL trivia:
 
 ```sh
-python -m app.main
+python -m app.questions
 ```
 
 ## Tests
